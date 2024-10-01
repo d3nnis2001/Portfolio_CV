@@ -31,7 +31,7 @@ const descriptions = ["No Code Workflow Environment where\n" +
 ]
 const projects = [{name: "Triggerflow", link: "https://www.github.com", desc: descriptions[0], picture: "", size: 337},
                   {name: "M-Maps", link: "https://www.github.com", desc: descriptions[1], picture: "Link to picturre", size: 280},
-                  {name: "ChendLess", link: "https://www.github.com", desc: descriptions[2], picture: "Link to picturre", size: 330},
+                  {name: "ChendLess", link: "https://www.github.com", desc: descriptions[2], picture: "Link to picturre", size: 300},
 ]
 </script>
 
