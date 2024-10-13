@@ -15,6 +15,7 @@
       </div>
       <NavigationImpressum class="mt-auto mb-8 flex justify-center" :filledDots="[1]" />
     </div>
+    <NavigationArrow direction="right" @navigate="$emit('navigate', 'right')" />
   </div>
 </template>
 
@@ -26,6 +27,9 @@ import Socials from "@/components/Hero/Socials.vue"
 import TextPart from "@/components/Hero/TextPart.vue";
 import ContactButton from "@/components/Hero/ContactButton.vue";
 import NavigationImpressum from "@/components/Hero/NavigationImpressum.vue";
+import NavigationArrow from "@/components/NavigationArrow.vue";
+
+defineEmits(['navigate']);
 </script>
 
 <style>
