@@ -12,37 +12,37 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'hero',
+      name: 'Hero',
       component: Hero
     },
     {
       path: '/about',
-      name: 'about',
+      name: 'About',
       component: About,
     },
     {
       path: '/about2',
-      name: 'about2',
+      name: 'About2',
       component: About2,
     },
     {
       path: '/projects',
-      name: 'projects',
+      name: 'Projects',
       component: Projects,
     },
     {
       path: '/skills',
-      name: 'skills',
+      name: 'Skills',
       component: Skills,
     },
     {
       path: '/impressum',
-      name: 'impressum',
+      name: 'Impressum',
       component: Impressum,
     },
     {
       path: '/contact',
-      name: 'contactMe',
+      name: 'Contact',
       component: ContactMe,
     },
   ]
