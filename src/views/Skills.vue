@@ -1,10 +1,12 @@
 <template>
-  <div class="flex flex-col justify-around h-screen w-screen">
-    <div class="flex flex-row w-full flex-grow justify-between items-start">
-      <ProjectCard v-bind="lastProject" class="w-1/2 h-5/6 justify-end items-center text-start  "/>
-      <SkillSection class="w-1/2"/>
+  <div class="flex flex-col h-screen w-screen">
+    <div class="flex items-center justify-center">
+      <div class="ml-40 flex w-full justify-center items-center px-4">
+        <ProjectCard v-bind="lastProject" class="w-1/2 max-w-md" />
+        <SkillSection class="w-1/2 ml-20"/>
+      </div>
     </div>
-    <NavigationImpressum :filled-dots="[5]" class="mb-8 justify-center"/>
+    <NavigationImpressum :filled-dots="[5]" class="mb-8" />
   </div>
 </template>
 
