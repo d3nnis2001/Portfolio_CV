@@ -1,19 +1,19 @@
 <template>
   <div class="flex flex-col h-screen w-screen">
-    <div class="flex flex-row h-3/4">
-      <div class="flex flex-col justify-around w-1/2 items-center text-start">
-        <h1 class="text-3xl font-extrabold text-white/80">Education</h1>
-        <div v-for="(item, index) in education" :key="index">
+    <div class="flex flex-row h-3/4 mt-10">
+      <div class="flex flex-col justify-around w-1/2 text-start">
+        <h1 class="text-3xl font-extrabold text-white/80 ml-40">Education</h1>
+        <div v-for="(item, index) in education" :key="index" class="ml-40">
           <WorkCard :text="item.desc" :heading="item.name" :year="item.year" />
         </div>
-        <h1 class="text-3xl font-extrabold text-white/80">Work</h1>
-        <div v-for="(item, index) in work" :key="index">
+        <h1 class="text-3xl font-extrabold text-white/80 ml-40">Work</h1>
+        <div v-for="(item, index) in work" :key="index" class="ml-40">
           <WorkCard :text="item.desc" :heading="item.name" :year="item.year" />
         </div>
       </div>
-      <HobbyCard class="w-1/2"/>
+      <HobbyCard class="w-1/2 justify-center items-end"/>
     </div>
-    <NavigationImpressum :filled-dots="[3]" class="mb-8"/>
+    <NavigationImpressum :filled-dots="[3]" class="mb-8 mt-auto"/>
   </div>
 </template>
 
@@ -34,5 +34,5 @@ const work = [
 </script>
 
 <style scoped>
-/* Deine Styles hier */
+
 </style>
