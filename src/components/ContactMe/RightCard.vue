@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col justify-center">
-    <p class="text-2xl text-white/50 font-bold text-end mb-8">Direct Contact</p>
+    <p class="text-4xl text-white/50 font-bold text-end mb-8">Direct Contact</p>
     <div class="background-c p-4 h-80 justify-around flex flex-col rounded-xl items-end">
       <div class="divOptions">
         <p class="stand">
           +49 1590 6741594
         </p>
         <SocialCircle class="circleOption">
-          <img src="../icons/Phone.svg" alt="Phone" class="w-8 h-8" />
+          <img src="../icons/Phone.svg" alt="Phone" class="w-6 h-6" />
         </SocialCircle>
       </div>
       <div class="divOptions">
@@ -15,15 +15,15 @@
           Germany, Bielefeld
         </p>
         <SocialCircle class="circleOption">
-          <img src="../icons/GPS.svg" alt="GPS" class="w-8 h-8" />
+          <img src="../icons/GPS.svg" alt="GPS" class="w-6 h-6" />
         </SocialCircle>
       </div>
       <div class="divOptions">
         <p class="stand">
-          dschielke@gmail.com
+          dennisschielke1@gmail.com
         </p>
         <SocialCircle class="circleOption">
-          <img src="../icons/Mail.svg" alt="Mail" class="w-8 h-8" />
+          <img src="../icons/Mail.svg" alt="Mail" class="w-6 h-6" />
         </SocialCircle>
       </div>
     </div>
