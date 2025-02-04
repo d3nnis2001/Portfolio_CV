@@ -35,11 +35,9 @@ const hobbies = [
 
 .recback {
   background: rgba(217,217,217,0.03);
-  z-index: 1;
 }
 .hobby-title {
   position: relative;
-  z-index: -10;
   margin-top: -50px;
 }
 

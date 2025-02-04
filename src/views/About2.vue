@@ -11,7 +11,6 @@
           <WorkCard :text="item.desc" :heading="item.name" :year="item.year" />
         </div>
       </div>
-      <HobbyCard class="w-1/2 justify-center items-end"/>
     </div>
     <NavigationImpressum :filled-dots="[3]" class="mb-8 mt-auto"/>
   </div>
@@ -19,7 +18,6 @@
 
 <script setup>
 import WorkCard from "@/components/About/WorkCard.vue";
-import HobbyCard from "@/components/About/HobbyCard.vue";
 import NavigationImpressum from "@/components/Hero/NavigationImpressum.vue";
 
 const education = [
