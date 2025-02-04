@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col w-full">
-    <h1 class="text-white/80 mt-5 text-4xl font-extrabold">
+    <h1 class="text-white mt-5 text-4xl font-extrabold">
       Skills
     </h1>
     <WebDevelopmentSection/>

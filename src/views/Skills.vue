@@ -6,7 +6,7 @@
         <SkillSection class="w-1/2 ml-20"/>
       </div>
     </div>
-    <NavigationImpressum :filled-dots="[5]" class="mb-8" />
+    <NavigationImpressum :filled-dots="[5]" class="mt-auto mb-8" />
   </div>
 </template>
 
