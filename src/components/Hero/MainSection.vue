@@ -1,15 +1,17 @@
 <template>
   <div class="flex flex-col justify-center">
-    <div class="flex flex-row justify-center flex-grow">
-      <div class="flex flex-col">
-        <TextPart />
-        <Socials />
-        <div class="flex flex-row items-center mt-14">
-          <ContactButton class="mr-8" />
-          <DownloadCVButton />
+    <div class="flex flex-col lg:flex-row justify-center items-center flex-grow">
+      <div class="flex flex-col lg:items-start items-center">
+        <div>
+          <TextPart class="" />
+          <Socials class=""/>
+          <div class="flex flex-row items-center mt-8 lg:mt-14">
+            <ContactButton class="mr-8" />
+            <DownloadCVButton />
+          </div>
         </div>
       </div>
-      <Picture class="ml-10" />
+      <Picture class="order-first lg:order-last lg:ml-10" />
     </div>
   </div>
 </template>

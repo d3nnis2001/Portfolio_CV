@@ -4,7 +4,7 @@
     <div class="flex-grow flex items-center justify-center">
       <MainSection />
     </div>
-    <NavigationImpressum class="mb-8 flex justify-center" :filledDots="[1]" />
+    <NavigationImpressum class="mb-8 ml-8 flex justify-center" :filledDots="[1]" />
   </div>
 </template>
 
