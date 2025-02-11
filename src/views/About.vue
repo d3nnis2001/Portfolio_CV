@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col h-screen w-screen">
-    <h1 class="text-5xl font-extrabold flex justify-center mt-10 text-white">About Me</h1>
-    <div class="flex flex-row h-full w-screen">
-      <div class="flex flex-col w-1/2">
-        <LeftCard class="w-10/12 flex ml-20 mt-20"/>
+    <h1 class="text-4xl lg:text-5xl font-extrabold flex justify-center mt-10 text-white">About Me</h1>
+    <div class="flex flex-col items lg:flex-row h-full w-screen">
+      <div class="flex flex-col lg:w-1/2">
+        <LeftCard class="w-10/12 mx-auto lg:mx-20"/>
       </div>
-      <HobbyCard class="w-1/2 h-full justify-center items-end"/>
+      <HobbyCard class="lg:w-1/2 h-full justify-center items-end"/>
     </div>
     <NavigationImpressum class="mt-auto mb-8 flex justify-center" :filled-dots="[2]"/>
   </div>

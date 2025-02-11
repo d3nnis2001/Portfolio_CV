@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col">
-    <div class="recback rounded-l-3xl w-3/5 flex flex-col height_test items-center p-6">
-      <h2 class="orangeMain font-extrabold text-5xl hobby-title">Hobbies</h2>
+    <div class="recback rounded-l-3xl lg:w-3/5 flex flex-col height_test items-center p-6">
+      <h2 class="orangeMain font-extrabold text-3xl lg:text-5xl hobby-title">Hobbies</h2>
       <div class="flex flex-col h-full justify-around">
         <div v-for="(hobby, index) in hobbies" :key="index" class="">
           <HobbyIconText :name="hobby.name">
-            <img :src="hobby.picture" alt="" class="icon-image" />
+            <img :src="hobby.picture" alt="" class="h-8 md:h-10 lg:h-12 w-8 md:w-10 lg:w-12" />
           </HobbyIconText>
         </div>
       </div>
@@ -44,6 +44,16 @@ const hobbies = [
 .icon-image {
   width: 48px;
   height: 48px;
+}
+
+.icon-image-med {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-image-small {
+  width: 30px;
+  height: 30px;
 }
 
 .height_test {

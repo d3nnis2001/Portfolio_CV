@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-row items-center">
     <slot></slot>
-    <p class="mx-6 font-extrabold text-white/60 rounded-3xl text-5xl">-</p>
-    <p class="font-extrabold text-white/60 text-3xl">{{name}}</p>
+    <p class="mx-6 font-extrabold text-white/60 text-xl rounded-3xl lg:text-5xl">-</p>
+    <p class="font-extrabold text-white/60 text-xl lg:text-3xl">{{name}}</p>
   </div>
 </template>
 
