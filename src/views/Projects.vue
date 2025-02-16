@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col justify-center items-center min-h-screen">
     <div class="flex flex-col justify-center w-screen flex-grow">
-      <div class="flex flex-row justify-around">
-        <ProjectCard v-bind="projects[0]" />
-        <div class="flex flex-col justify-center items-center">
-          <h1 class="text-white/95 font-extrabold text-4xl mb-14">Projects</h1>
+      <div class="flex flex-col sm:flex-row justify-around">
+        <ProjectCard v-bind="projects[0]" class="order-2 sm:order-1"/>
+        <div class="flex flex-col justify-center order-1 sm:order-2 items-center">
+          <h1 class="text-white/95 font-extrabold text-4xl mb-14 mt-10 sm:mt-0">Projects</h1>
           <ProjectCard v-bind="projects[1]" />
         </div>
-        <ProjectCard v-bind="projects[2]" />
+        <ProjectCard v-bind="projects[2]" class="order-3" />
       </div>
     </div>
     <NavigationImpressum :filled-dots="[4]" class="mb-8"/>

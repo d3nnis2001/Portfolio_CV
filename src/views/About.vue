@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col h-screen w-screen">
-    <h1 class="text-4xl lg:text-5xl font-extrabold flex justify-center mt-10 text-white">About Me</h1>
+    <h1 class="text-4xl lg:text-5xl font-extrabold mb-4 lg:mb-0 flex justify-center mt-10 text-white">About Me</h1>
     <div class="flex flex-col items lg:flex-row h-full w-screen">
       <div class="flex flex-col lg:w-1/2">
-        <LeftCard class="w-10/12 mx-auto lg:mx-20"/>
+        <LeftCard class="w-10/12 mb-4 lg:mb-0 mx-auto lg:mx-20"/>
       </div>
       <HobbyCard class="lg:w-1/2 h-full justify-center items-end"/>
     </div>

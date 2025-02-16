@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col h-screen w-screen">
+  <div class="flex flex-col text-center md:text-start items-center h-screen w-screen">
     <div class="flex items-center justify-center">
-      <div class="ml-40 flex w-full justify-center items-center px-4">
-        <ProjectCard v-bind="lastProject" class="w-1/2 max-w-md" />
-        <SkillSection class="w-1/2 ml-20"/>
+      <div class="lg:ml-40 flex flex-col sm:flex-row w-full justify-center items-center px-4">
+        <ProjectCard v-bind="lastProject" class="w-1/2 max-w-md order-2 mt-10 sm:mt-0 sm:order-1" />
+        <SkillSection class="w-1/2 lg:ml-20 order-1 sm:order-2"/>
       </div>
     </div>
     <NavigationImpressum :filled-dots="[5]" class="mt-auto mb-8" />

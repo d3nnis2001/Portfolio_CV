@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <h2 class="text-white text-2xl md:text-3xl lg:custom_fontsize mb-10 font-semibold">
+    <h2 class="text-white text-2xl md:text-3xl lg:custom_fontsize mb-4 lg:mb-10 font-semibold">
     Hello There! 👋
     </h2>
     <div class="flex flex-row">
