@@ -1,18 +1,22 @@
 <template>
-  <!-- Setze die CSS-Variable --card-size per inline style aus der Prop -->
   <div class="flex flex-col items-center" :style="cardStyle">
     <div class="project-card-image border-4 rounded-2xl border-orange-500 mb-10 overflow-hidden">
       <img :src="picture" :alt="name" class="w-full h-full object-cover" />
     </div>
-    <div class="flex flex-row items-center">
-      <h1 class="font-extrabold text-2xl sm:text-4xl text-white/80 mr-4 sm:mr-10 mb-5">
+    <div class="w-full max-w-[var(--card-size)]">
+      <h1 class="relative font-extrabold text-2xl sm:text-4xl text-white/80 mb-5">
+        <a
+            :href="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="float-right ml-4 transition-transform duration-300 hover:scale-125"
+        >
+          <img src="../icons/Github.svg" alt="Github" class="w-6 h-6 sm:w-10 sm:h-10" />
+        </a>
         {{ name }}
       </h1>
-      <a :href="link" target="_blank" rel="noopener noreferrer">
-        <img src="../icons/Github.svg" alt="Github" class="w-6 h-6 sm:w-10 sm:h-10" />
-      </a>
     </div>
-    <p class="project-card-desc font-medium text-sm sm:text-base text-white/60 text-center">
+    <p class="project-card-desc font-medium text-sm sm:text-base text-white/60 text-left">
       {{ desc }}
     </p>
   </div>
@@ -28,11 +32,10 @@ export default {
     picture: String,
     size: {
       type: Number,
-      default: 320 // Standardgröße für größere Bildschirme
+      default: 320
     }
   },
   computed: {
-    // Setze die CSS-Variable, die in den Styles verwendet wird
     cardStyle() {
       return {
         '--card-size': `${this.size}px`
@@ -43,16 +46,31 @@ export default {
 </script>
 
 <style scoped>
-/* Nutze die CSS-Variable für die Bild- und Textbreite */
 .project-card-image {
   width: var(--card-size);
   height: var(--card-size);
+  border-color: #f97316;
+  animation: pulseBorder 5s ease-in-out infinite;
+  transition: transform 0.3s ease;
 }
+
+.project-card-image:hover {
+  transform: scale(1.05);
+}
+
 .project-card-desc {
   width: var(--card-size);
 }
 
-/* Mobile Anpassung: z.B. 75% der Größe */
+@keyframes pulseBorder {
+  0%, 100% {
+    border-color: rgba(249, 170, 22, 1);
+  }
+  50% {
+    border-color: rgba(249, 100, 22, 0.5);
+  }
+}
+
 @media (max-width: 640px) {
   .project-card-image {
     width: calc(var(--card-size) * 0.75);

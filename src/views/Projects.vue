@@ -29,9 +29,9 @@ const descriptions = ["No Code Workflow Environment where\n" +
                       "mstching and so on and so on beautiful\n" +
                       "design and so on."
 ]
-const projects = [{name: "Triggerflow", link: "https://www.github.com", desc: descriptions[0], picture: "", size: 337},
-                  {name: "M-Maps", link: "https://www.github.com", desc: descriptions[1], picture: "Link to picturre", size: 280},
-                  {name: "ChendLess", link: "https://www.github.com", desc: descriptions[2], picture: "Link to picturre", size: 300},
+const projects = [{name: "Prototype-based sEMG signal classification", link: "https://github.com/d3nnis2001/Prototype-based-sEMG-signal-classification-with-CNet2D", desc: descriptions[0], picture: "../icons/Discord.svg", size: 337},
+                  {name: "M-Maps", link: "https://github.com/d3nnis2001/M-Maps", desc: descriptions[1], picture: "../icons/Discord.svg", size: 280},
+                  {name: "CHendLess", link: "https://github.com/d3nnis2001/CHendLess", desc: descriptions[2], picture: "", size: 300},
 ]
 </script>
 
