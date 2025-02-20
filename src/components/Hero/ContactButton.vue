@@ -1,5 +1,6 @@
 <template>
   <button
+      @click="navigateToContact"
       class="
       px-4 py-2 text-[18px] font-bold rounded-[10px]
       sm:px-6 sm:py-3 sm:text-[22px] sm:rounded-[20px]
@@ -13,6 +14,13 @@
 </template>
 
 <script setup>
+import {useRouter} from 'vue-router';
+
+const router = useRouter();
+
+const navigateToContact = () => {
+  router.push("contact");
+};
 </script>
 
 <style scoped>

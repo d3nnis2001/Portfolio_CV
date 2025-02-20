@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center" :style="cardStyle">
-    <div class="project-card-image-wrapper mb-4 lg:mb-10 relative">
+    <div class="project-card-image-wrapper bg-white/5 mb-4 lg:mb-10 relative">
       <div class="project-card-image overflow-hidden">
         <img :src="picture" :alt="name" class="w-full h-full object-cover" />
       </div>
@@ -54,12 +54,27 @@ export default {
 .project-card-image-wrapper {
   width: var(--card-size);
   height: var(--card-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .project-card-image {
-  width: 100%;
-  height: 100%;
+  width: var(--card-size);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.project-card-image img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 
 .animated-border {
   position: absolute;

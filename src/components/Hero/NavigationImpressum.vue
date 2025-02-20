@@ -1,7 +1,11 @@
 <template>
   <div class="grid grid-cols-[1fr,auto,1fr] items-center gap-4">
     <div class="flex justify-end">
-      <span class="text-[20px] sm:text-[25px] font-extrabold text-orange-500">
+      <span
+          class="text-[20px] sm:text-[25px] font-extrabold text-orange-500 cursor-pointer
+               hover:underline hover:text-orange-400 transition-colors duration-300"
+          @click="navigateToImpressum"
+      >
         Impressum
       </span>
     </div>
@@ -12,10 +16,10 @@
             v-for="dot in 6"
             :key="dot"
             :class="[
-            'w-3 h-3 sm:w-4 sm:h-4 rounded-full',
+            'w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300',
             filledDots.includes(dot)
               ? 'bg-orange-500'
-              : 'border border-orange-500'
+              : 'border border-orange-500 hover:bg-orange-500 hover:border-transparent'
           ]"
         ></div>
       </div>
@@ -24,7 +28,13 @@
 </template>
 
 <script setup>
-import {defineProps} from 'vue';
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const navigateToImpressum = () => {
+  router.push("/impressum");
+};
 
 const props = defineProps({
   filledDots: {

@@ -1,5 +1,7 @@
 <template>
-  <button
+  <a
+      :href="cv"
+      download="CV.pdf"
       class="
       px-4 py-2 text-[16px] font-bold rounded-[10px]
       sm:px-6 sm:py-3 sm:text-[20px] sm:rounded-[20px]
@@ -9,10 +11,11 @@
     "
   >
     Download CV
-  </button>
+  </a>
 </template>
 
 <script setup>
+import cv from "@/assets/CV.pdf";
 </script>
 
 <style scoped>
