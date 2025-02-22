@@ -2,12 +2,20 @@
   <div class="flex flex-col justify-center items-start relative">
     <p class="text-4xl text-white/50 font-bold mb-8">Leave a message</p>
 
-    <input v-model="form.author" placeholder="Your Name" class="w-80 pl-4 font-bold h-10 text-lg bg-white/5 mb-4 rounded-xl" />
-    <input v-model="form.recipient" placeholder="Your Email" class="w-80 pl-4 font-bold h-10 text-lg bg-white/5 mb-4 rounded-xl" />
+    <input v-model="form.author" placeholder="Your Name" class="w-80 pl-4 font-bold h-10 text-lg bg-white/5 mb-4 rounded-xl focus:ring-2 focus:ring-white/40 transition" />
+    <input v-model="form.recipient" placeholder="Your Email" class="w-80 pl-4 font-bold h-10 text-lg bg-white/5 mb-4 rounded-xl focus:ring-2 focus:ring-white/40 transition" />
 
     <div class="relative w-full">
-      <textarea v-model="form.message" placeholder="Your Message" class="w-full width-custom bg-white/5 rounded-xl p-4 resize-none text-lg"></textarea>
-      <button @click="sendMessage" class="absolute bottom-4 right-4 bg-white/5 text-white/50 font-bold px-6 py-3 rounded-xl">
+      <textarea v-model="form.message" placeholder="Your Message" class="w-full width-custom bg-white/5 rounded-xl p-4 resize-none text-lg focus:ring-2 focus:ring-white/40 transition"></textarea>
+
+      <!-- ✨ Button mit Hover & Active Effekt -->
+      <button
+          @click="sendMessage"
+          class="absolute bottom-4 right-4 bg-white/5 text-white/50 font-bold px-6 py-3 rounded-xl
+               transition-all duration-300 ease-in-out
+               hover:bg-white/20 hover:text-white
+               active:bg-white/30 active:scale-95"
+      >
         Submit
       </button>
     </div>
@@ -26,6 +34,10 @@ const form = ref({
   message: "",
 });
 
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 const statusMessage = ref("");
 
 const sendMessage = () => {
@@ -35,22 +47,22 @@ const sendMessage = () => {
   }
 
   emailjs.send(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
       {
         from_name: form.value.author,
         reply_to: form.value.recipient,
         message: form.value.message,
       },
-      "YOUR_PUBLIC_KEY"
+      EMAILJS_PUBLIC_KEY
   )
       .then(() => {
-        statusMessage.value = "Email sent successfully!";
-        form.value = { author: "", recipient: "", message: "" };
+        statusMessage.value = "✅ Email sent successfully!";
+        form.value = {author: "", recipient: "", message: ""};
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        statusMessage.value = "Failed to send email.";
+        statusMessage.value = "❌ Failed to send email.";
       });
 };
 </script>
@@ -59,7 +71,8 @@ const sendMessage = () => {
 .width-custom {
   height: 210px;
 }
-textarea {
+
+textarea, input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

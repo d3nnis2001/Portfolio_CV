@@ -12,6 +12,7 @@
     "@emailjs/nodejs": "^5.0.2",
     "@primevue/themes": "^4.0.7",
     "chart.js": "^4.4.4",
+    "dotenv": "^16.4.7",
     "emailjs-com": "^3.2.0",
     "lucide-vue-next": "^0.446.0",
     "pinia": "^2.1.7",
