@@ -2,7 +2,6 @@
   <div class="flex flex-col">
     <h2 class="text-white/80 text-2xl sm:text-3xl mt-5 font-semibold">Web Development/Design</h2>
     <div class="bg-white/5 p-5 sm:p-7 pr-10 mt-5 rounded-xl sm:w-10/12 text-2xl sm:text-3xl text-white/80">
-      <!-- Grid: 2 Spalten auf Mobile, 3 auf md, 4 auf lg -->
       <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="flex flex-col items-center">
           <p>Vue.js</p>
@@ -42,9 +41,7 @@
 </template>
 
 <script setup>
-// Hier ggf. Imports und Logik, falls benötigt
 </script>
 
 <style scoped>
-/* Hier kannst du weitere Styles ergänzen */
 </style>

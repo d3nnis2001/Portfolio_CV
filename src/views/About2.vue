@@ -13,30 +13,32 @@
 <script setup>
 import TimelineItem from "@/components/About/TimelineItem.vue";
 import NavigationImpressum from "@/components/Hero/NavigationImpressum.vue";
+import {useI18n} from "vue-i18n";
+const { t } = useI18n()
 
 const education = [
   {
     year: "2018-2021",
     name: "Abitur",
-    desc: "Major in Computer Science & Mathematics – My first exposure to object-oriented programming, SQL, and software development fundamentals. (Carl-Severing-Berufskolleg)",
+    desc: t('about_text_1'),
   },
   {
     year: "2021-2025",
-    name: "Bachelor of Science – Cognitive Computer Science",
-    desc: "Gained in-depth knowledge of Data Science, AI, and Agile Software Engineering. Bachelor Thesis: Prototype-based Convolutional Neural Networks for EMG Signal Classification. (University of Bielefeld)",
+    name: t('about_text_2'),
+    desc: t('about_text_3'),
   },
 ];
 
 const work = [
   {
     year: "2019-2022",
-    name: "Part-time Job – Marktkauf Oldentrup",
-    desc: "Worked alongside my studies, gaining practical experience in teamwork and responsibility.",
+    name: t('about_text_4'),
+    desc: t('about_text_5'),
   },
   {
-    year: "2022-Today",
-    name: "Technical Consultant – Triggeryou GmbH (Working Student)",
-    desc: "Developing interfaces and automation using a no-code environment from Diamont Software GmbH. Working extensively with REST APIs and SQL to optimize customer solutions.",
+    year: t('about_text_8'),
+    name: t('about_text_6'),
+    desc: t('about_text_7'),
   },
 ];
 </script>

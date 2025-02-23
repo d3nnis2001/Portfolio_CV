@@ -15,8 +15,10 @@ import ProjectCard from "@/components/Projects/ProjectCard.vue";
 import NavigationImpressum from "@/components/Hero/NavigationImpressum.vue";
 import SkillSection from "@/components/Skills/SkillSection.vue";
 import geoguesser from "@/assets/icons/GeoGuesser.svg"
+import {useI18n} from "vue-i18n";
+const { t } = useI18n()
 
-const description = "This GeoGuesser version is a university project built with MVC architecture in Android Studio. It challenges users to guess locations from images.";
+const description = t("project_text_4");
 const lastProject = {name: "GeoGuesser", link: "https://github.com/d3nnis2001/GeoGuessr", desc: description, picture: geoguesser, size: 337};
 
 </script>

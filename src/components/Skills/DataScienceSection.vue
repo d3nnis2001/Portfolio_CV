@@ -33,9 +33,7 @@
 </template>
 
 <script setup>
-// Hier ggf. Imports und Logik, falls benötigt
 </script>
 
 <style scoped>
-/* Hier kannst du weitere Styles ergänzen */
 </style>

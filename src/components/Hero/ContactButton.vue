@@ -9,13 +9,14 @@
       hover:bg-gray-800 transition-colors duration-300
     "
   >
-    Contact Me
+    {{ t('hero_text_1') }}
   </button>
 </template>
 
 <script setup>
 import {useRouter} from 'vue-router';
-
+import {useI18n} from "vue-i18n";
+const { t } = useI18n();
 const router = useRouter();
 
 const navigateToContact = () => {

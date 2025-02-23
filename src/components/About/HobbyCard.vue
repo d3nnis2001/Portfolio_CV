@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <div class="recback rounded-l-3xl lg:w-3/5 flex flex-col height_test items-center p-6">
-      <h2 class="orangeMain font-extrabold text-3xl lg:text-5xl hobby-title">Hobbies</h2>
+      <h2 class="orangeMain font-extrabold text-3xl lg:text-5xl hobby-title">Hobbys</h2>
       <div class="flex flex-col h-full justify-around">
         <div v-for="(hobby, index) in hobbies" :key="index" class="">
           <HobbyIconText :name="hobby.name">
@@ -15,6 +15,8 @@
 
 <script setup>
 import HobbyIconText from "@/components/About/HobbyIconText.vue";
+import {useI18n} from "vue-i18n";
+const { t } = useI18n()
 
 import hobbyCodeImage from "@/assets/icons/hobby_code.svg";
 import hobbyWeightImage from "@/assets/icons/hobby_weight.svg";
@@ -23,11 +25,11 @@ import hobby3DImage from "@/assets/icons/hobby_3d.svg";
 import hobbyMusicImage from "@/assets/icons/hobby_music.svg";
 
 const hobbies = [
-  { name: "Coding", picture: hobbyCodeImage },
-  { name: "Gym", picture: hobbyWeightImage },
-  { name: "Gaming", picture: hobbyGamingImage },
-  { name: "3D Printing", picture: hobby3DImage },
-  { name: "Music", picture: hobbyMusicImage },
+  { name: t('hobby_code'), picture: hobbyCodeImage },
+  { name: t('hobby_weight'), picture: hobbyWeightImage },
+  { name: t('hobby_gaming'), picture: hobbyGamingImage },
+  { name: t('hobby_3d'), picture: hobby3DImage },
+  { name: t('hobby_music'), picture: hobbyMusicImage },
 ];
 </script>
 

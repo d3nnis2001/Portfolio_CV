@@ -15,7 +15,7 @@
   </div>
   <transition name="fade">
     <div v-if="copied" class="fixed bottom-5 right-5 bg-gray-800 text-white px-4 py-2 rounded shadow-lg">
-      Discord-Tag in die Zwischenablage kopiert!
+      {{ t("hero_text_3") }}
     </div>
   </transition>
 </template>
@@ -23,6 +23,8 @@
 <script setup>
 import { ref } from 'vue'
 import SocialCircle from './SocialCircle.vue'
+import {useI18n} from "vue-i18n";
+const { t } = useI18n();
 
 const discordTag = "descy"
 

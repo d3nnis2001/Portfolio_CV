@@ -5,7 +5,7 @@
           class="text-[20px] sm:text-[25px] font-extrabold text-orange-500 cursor-pointer hover:underline hover:text-orange-400 transition-colors duration-300"
           @click="navigateToImpressum"
       >
-        Impressum
+        {{ t("hero_text_2") }}
       </span>
     </div>
     <div class="w-[3px] h-10 sm:h-16 bg-white bg-opacity-25 rounded-full"></div>
@@ -29,6 +29,8 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+import {useI18n} from "vue-i18n";
+const { t } = useI18n();
 
 const router = useRouter();
 
