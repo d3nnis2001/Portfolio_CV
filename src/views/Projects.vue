@@ -17,14 +17,17 @@
 <script setup>
 import ProjectCard from "@/components/Projects/ProjectCard.vue";
 import NavigationImpressum from "@/components/Hero/NavigationImpressum.vue";
+import chendless from "@/assets/icons/CHendLess.png";
+import mmaps from "@/assets/icons/MMaps.png"
+import gmlvqglvq from "@/assets/icons/GMLVQGLVQ.svg";
 
 const descriptions = ["This project uses CNet2D with GLVQ and GMLVQ to classify sEMG signals efficiently, optimized for few-shot learning with Ninapro and Nearlab datasets.",
                       "M-Maps is a university project developed in collaboration with Deutsche Bahn. It is a web application that records railway conditions and streamlines the creation and tracking of repair orders.",
                       "CHendLess is a web app that helps you find cheaper alternatives for any product. Just upload an image, and it shows you similar items at the best prices."
 ]
-const projects = [{name: "Prototype-based sEMG signal classification", link: "https://github.com/d3nnis2001/Prototype-based-sEMG-signal-classification-with-CNet2D", desc: descriptions[0], picture: "src/components/icons/GMLVQGLVQ.svg", size: 337},
-                  {name: "M-Maps", link: "https://github.com/d3nnis2001/M-Maps", desc: descriptions[1], picture: "src/components/icons/MMaps.png", size: 280},
-                  {name: "CHendLess", link: "https://github.com/d3nnis2001/CHendLess", desc: descriptions[2], picture: "src/components/icons/CHendLess.png", size: 300},
+const projects = [{name: "Prototype-based sEMG signal classification", link: "https://github.com/d3nnis2001/Prototype-based-sEMG-signal-classification-with-CNet2D", desc: descriptions[0], picture: gmlvqglvq, size: 337},
+                  {name: "M-Maps", link: "https://github.com/d3nnis2001/M-Maps", desc: descriptions[1], picture: mmaps, size: 280},
+                  {name: "CHendLess", link: "https://github.com/d3nnis2001/CHendLess", desc: descriptions[2], picture: chendless, size: 300},
 ]
 </script>
 
