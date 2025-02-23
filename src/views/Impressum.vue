@@ -14,7 +14,7 @@
         </p>
         <p class="mt-4">
           Telefon: +49 1590 6741594<br />
-          E-Mail: <a href="mailto:dennisschielke1@gmail.com" class="underline text-orange-500">dennisschielke1@gmail.com</a>
+          E-Mail: <a href="mailto:dennis.schielke1@gmail.com" class="underline text-orange-500">dennisschielke1@gmail.com</a>
         </p>
       </div>
     </div>
