@@ -4,7 +4,7 @@
       <div class="flex flex-col sm:flex-row justify-around">
         <ProjectCard v-bind="projects[0]" class="order-2 sm:order-1"/>
         <div class="flex flex-col justify-center order-1 sm:order-2 items-center">
-          <h1 class="text-white/95 font-extrabold text-4xl mb-14 mt-10 sm:mt-0">{{ t("project_text_5") }}</h1>
+          <h1 class="text-white/95 font-extrabold text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-14 xl:mb-24 mt-10 sm:mt-0">{{ t("project_text_5") }}</h1>
           <ProjectCard v-bind="projects[1]" />
         </div>
         <ProjectCard v-bind="projects[2]" class="order-3" />
