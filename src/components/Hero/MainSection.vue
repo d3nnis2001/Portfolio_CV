@@ -5,7 +5,7 @@
         <div>
           <TextPart class="" />
           <Socials class=""/>
-          <div class="flex flex-row items-center mt-8 lg:mt-14 xl:mt-20">
+          <div class="flex flex-row items-center mt-8 lg:mt-14 2xl:mt-20">
             <ContactButton class="mr-8 xl:mr-12" />
             <DownloadCVButton />
           </div>
