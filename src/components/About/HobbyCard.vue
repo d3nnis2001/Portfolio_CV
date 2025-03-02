@@ -5,7 +5,7 @@
       <div class="flex flex-col h-full justify-around">
         <div v-for="(hobby, index) in hobbies" :key="index" class="">
           <HobbyIconText :name="hobby.name">
-            <img :src="hobby.picture" alt="" class="h-8 md:h-10 lg:h-12 w-8 md:w-10 lg:w-12" />
+            <img :src="hobby.picture" alt="" class="h-8 md:h-10 lg:h-12 w-8 md:w-10 lg:w-12 2xl:w-14 2xl:h-14" />
           </HobbyIconText>
         </div>
       </div>

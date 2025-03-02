@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col h-screen w-screen  items-center">
     <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:grid-rows-2 gap-x-6 mt-10 w-3/4 mb-6 lg:mb-0">
-      <TimelineItem header="Education" :item="education[0]" class="order-1" />
-      <TimelineItem header="Work" :item="work[0]" class="order-3 sm:order-2"/>
+      <TimelineItem :header="t('about_text_10')" :item="education[0]" class="order-1" />
+      <TimelineItem :header="t('about_text_11')" :item="work[0]" class="order-3 sm:order-2"/>
       <TimelineItem :item="education[1]" class="order-2 sm:order-3"/>
       <TimelineItem :item="work[1]" class="order-4"/>
     </div>

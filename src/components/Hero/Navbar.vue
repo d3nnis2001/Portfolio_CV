@@ -2,7 +2,7 @@
   <div class="flex flex-row justify-around w-screen items-center">
     <LetsConnect/>
     <Logo/>
-    <LangButton/>
+    <LangButton class="z-10"/>
   </div>
 </template>
 

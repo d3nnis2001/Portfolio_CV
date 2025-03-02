@@ -1,7 +1,7 @@
 <template>
   <button
       @click="toggleLanguage"
-      class="bg-transparent border border-white border-opacity-70 rounded-[10px] text-white text-opacity-60 text-xl font-extrabold px-5 py-1.5 transition-colors duration-300 hover:bg-white hover:bg-opacity-10"
+      class="lang-button bg-transparent border border-white border-opacity-70 rounded-[10px] text-white text-opacity-60 text-xl font-extrabold px-5 py-1.5 transition-colors duration-300 hover:bg-white hover:bg-opacity-10"
   >
     {{ languageName }}
   </button>
@@ -21,4 +21,8 @@ const toggleLanguage = () => {
 </script>
 
 <style scoped>
+.lang-button {
+  min-width: 90px;
+  text-align: center;
+}
 </style>

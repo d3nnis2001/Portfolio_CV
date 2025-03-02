@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center" :style="cardStyle">
     <div class="project-card-image-wrapper bg-white/5 mb-4 lg:mb-6 relative">
-      <div class="project-card-image overflow-hidden cursor-pointer" @click="navigateToGithub">
+      <div class="project-card-image cursor-pointer" @click="navigateToGithub">
         <img :src="picture" :alt="name" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
       </div>
       <div class="border-effect"></div>
@@ -15,7 +15,7 @@
             rel="noopener noreferrer"
             class="float-right ml-4 transition-transform duration-300 hover:scale-125"
         >
-          <img src="../icons/Github.svg" alt="Github" class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10" />
+          <img src="../icons/Github.svg" alt="Github" class="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 2xl:h-12 2xl:w-12" />
         </a>
         {{ name }}
       </h1>
@@ -43,9 +43,9 @@ export default {
     cardStyle() {
       return {
         '--card-size': `${this.size}px`,
-        '--lg-card-size': `${this.size * 1.15}px`,
-        '--xl-card-size': `${this.size * 1.2}px`,
-        '--2xl-card-size': `${this.size * 1.3}px`
+        '--lg-card-size': `${this.size * 1.1}px`,
+        '--xl-card-size': `${this.size * 1.14}px`,
+        '--2xl-card-size': `${this.size * 1.21}px`
       }
     }
   },
@@ -66,7 +66,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   border-radius: 8px;
   position: relative;
 }
@@ -85,6 +84,8 @@ export default {
   height: auto;
   object-fit: cover;
   display: block;
+  transform-origin: center;
+  transition: transform 0.7s;
 }
 
 .border-effect {

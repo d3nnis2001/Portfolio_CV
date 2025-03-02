@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col justify-center items-start relative">
-    <p class="text-4xl text-white/50 font-bold mb-8">{{ t('contact_text_1') }}</p>
+    <p class="text-2xl mt-4 lg:mt-0 lg:text-4xl text-white/50 font-bold mb-4 lg:mb-8">{{ t('contact_text_1') }}</p>
 
-    <input v-model="form.author" :placeholder="t('contact_text_8')" class="w-80 pl-4 font-bold h-10 text-lg bg-white/5 mb-4 rounded-xl focus:ring-2 focus:ring-white/40 transition" />
-    <input v-model="form.recipient" :placeholder="t('contact_text_9')" class="w-80 pl-4 font-bold h-10 text-lg bg-white/5 mb-4 rounded-xl focus:ring-2 focus:ring-white/40 transition" />
+    <input v-model="form.author" :placeholder="t('contact_text_8')" class="w-1/2 pl-4 font-bold h-20 lg:h-14 text-lg bg-white/5 mb-4 rounded-xl focus:ring-2 focus:ring-white/40 transition" />
+    <input v-model="form.recipient" :placeholder="t('contact_text_9')" class="w-1/2 pl-4 font-bold h-20 lg:h-14 text-lg bg-white/5 mb-4 rounded-xl focus:ring-2 focus:ring-white/40 transition" />
 
-    <div class="relative w-full">
-      <textarea v-model="form.message" :placeholder="t('contact_text_10')" class="w-full width-custom bg-white/5 rounded-xl p-4 resize-none text-lg focus:ring-2 focus:ring-white/40 transition"></textarea>
+    <div class="relative w-full h-full">
+      <textarea v-model="form.message" :placeholder="t('contact_text_10')" class="w-full flex-grow h-full bg-white/5 rounded-xl p-4 resize-none text-lg focus:ring-2 focus:ring-white/40 transition"></textarea>
 
       <button
           @click="sendMessage"

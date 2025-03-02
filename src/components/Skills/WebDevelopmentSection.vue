@@ -3,7 +3,7 @@
     <h2 class="text-white/80 text-2xl sm:text-3xl xl:text-4xl 2xl:text-4xl mt-5 font-semibold">
       Web Development/Design
     </h2>
-    <div class="bg-white/5 p-5 sm:p-7 xl:p-10 pr-10 mt-5 rounded-xl xl:mr-20 text-2xl sm:text-3xl xl:text-4xl 2xl:text-4xl text-white/80">
+    <div class="bg-white/5 p-5 sm:p-7 xl:p-10 pr-10 mt-5 rounded-xl xl:mr-20 text-lg sm:text-xl xl:text-2xl 2xl:text-2xl text-white/80">
       <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6 2xl:gap-8">
         <div class="flex flex-col items-center">
           <p>Vue.js</p>
